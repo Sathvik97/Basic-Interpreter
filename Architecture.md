@@ -25,18 +25,24 @@ to optimize performance-critical code. This dual nature makes Java both a compil
 # Difference in the design
 
 Key concepts in compiler design include:
-
 Lexical Analysis: Breaking down source code into tokens.
+
 Syntax Analysis: Ensuring the code adheres to grammatical rules.
+
 Semantic Analysis: Checking for logical consistency.
+
 Code Optimization: Improving performance by refining the generated code.
+
 Code Generation: Producing machine code or intermediate code.
 
-Key concepts in interpreter design include:
 
+Key concepts in interpreter design include:
 Parsing: Analyzing the structure of the code.
+
 Execution: Directly running the parsed code.
+
 Dynamic Typing: Handling variable types at runtime.
+
 Error Handling: Providing immediate feedback for runtime errors.
 
 Compilers are prefered for perfermance critical applications such as operating systems,video games and large scale enterprise software
