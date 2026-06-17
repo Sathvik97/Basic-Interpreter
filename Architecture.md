@@ -35,7 +35,7 @@ Code Optimization: Improving performance by refining the generated code.
 
 Code Generation: Producing machine code or intermediate code.
 
-
+-----------------------------------------------------------------
 Key concepts in interpreter design include:
 Parsing: Analyzing the structure of the code.
 
