@@ -48,4 +48,7 @@ Error Handling: Providing immediate feedback for runtime errors.
 Compilers are prefered for perfermance critical applications such as operating systems,video games and large scale enterprise software
 Interpreters, however, shine in scenarios requiring flexibility, rapid prototyping.
 
+In a statically typed language, the type of a variable is known and checked at compile-time. This usually means you must explicitly declare the type of a variable (like int, String, or boolean) before you can use it, and that type cannot change later.
+
+n a dynamically typed language, types are associated with the values, not the variables themselves. Type checking happens at runtime. You don't need to specify what kind of data a variable holds; the language figures it out automatically when the code executes.  
 
