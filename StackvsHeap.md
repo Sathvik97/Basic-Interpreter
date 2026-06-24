@@ -32,7 +32,7 @@ There's no heap object here, because there's nothing to point to — x doesn't h
 
 
 The split you saw earlier (stack reference → heap object) only happens with reference types — things like String, arrays, or any class instance.Those that involve:
-stack: (reference/address) ──▶ heap: (actual object data)
+stack: (reference/address) ──> heap: (actual object data)
 But primitives skip that indirection entirely:
 stack: (the actual value directly)
 Java's full list of primitives
@@ -44,9 +44,9 @@ char c = 'A';      // stack only
 
 The stack-points-to-heap split only happens when a variable is a reference/pointer. If a variable directly holds its value (a primitive), there's no split
 it's stack-only (for locals), with nothing on the heap at all.
-Primitive variable:        (value) ────────── stored directly, done.
+Primitive variable:        (value) ──────────> stored directly, done.
 
-Reference variable:        (address) ───────▶ (actual data is elsewhere)
+Reference variable:        (address) ───────> (actual data is elsewhere)
 
 A primitive (int, double, boolean, etc.) has a small, fixed size known at compile time. The compiler can just say "reserve 4 bytes for this int, right here" and 
 put the value directly in that slot — no indirection needed.
