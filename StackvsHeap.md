@@ -7,8 +7,11 @@ stored in the stack.
 
 # Features:
 --> They are stored in contigous memory locations called as call stack
+
 -->Once the function finishes execution, the allocated memory is automatically freed.
+
 -->The programmer does not need to handle allocation or deallocation.
+
 -->Since stack memory is freed when a function completes, it is also called temporary memory allocation.
 
 # Heap:
@@ -19,8 +22,11 @@ Instead, it requires manual deallocation (In C/C++) or a garbage collector (in J
 
 # Features:
 -->If heap memory is full, JVM throws an error: java.lang.OutOfMemoryError.
+
 -->Slower than stack memory due to manual allocation and garbage collection.
+
 -->Typically larger in size compared to stack memory.
+
 -->every object you create with new goes on the heap.
 
 
