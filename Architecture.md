@@ -52,3 +52,56 @@ In a statically typed language, the type of a variable is known and checked at c
 
 In a dynamically typed language, types are associated with the values, not the variables themselves. Type checking happens at runtime. You don't need to specify what kind of data a variable holds; the language figures it out automatically when the code executes.  
 
+
+Semantic analysis in general refers to checking and computing facts about a program's meaning 
+
+Java's javac, C#'s Roslyn compiler, TypeScript's compiler, Rust's compiler — all of them have an explicit semantic analysis phase (often called "binding" or "type checking" or "resolution") that runs after parsing and before code generation. This is precisely why the editor can underline "undefined variable" or "type mismatch" before you ever run the program — that's semantic analysis output, not a runtime error.
+
+
+
+So basically the compiler and the interpreter have the same design on the frontend but the backend differs in case of both the shared frontend design:
+
+--> Lexical analysis: tokens are formed from all the characters.
+--> Parser: Organizes those tokens into an AST(abstract syntax tree).
+--> Semantic analysis: Checks scopes, variables and type safety rules.(compiler does it at a deeper level)
+
+# The Interpreter
+
+It contains Environment structure that stores,updates and fetches active program variables and the evaluater runs down the AST to perform the program
+
+# The Compiler
+
+The compiler on the other hand uses different methods of doing stuff after the frontend it converts the AST to IR(intermediate representative) which is more 
+optimized and easy for analysis its neutral mid level language, the optimizer optimizes the code for hardware efficiency by removing dead code , finnaly the 
+code generator converts this IR into low level machine level language for the final stages
+
+Compilers are used when the execution speed and the hardware efficiency is the main target Examples: Video games, operating systems, high-frequency trading algorithms, and machine learning libraries.
+
+Interpreters are used when the priority is on rapid prototyping and fast interactivity, cross platform portability is important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
